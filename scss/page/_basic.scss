@@ -1,0 +1,13 @@
+// Basic Setting
+@import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
+*{
+    font-family: 'Noto Sans TC', '微軟正黑體', sans-serif;
+    font-size: $fontsize-s;
+    font-weight: $font-weight-m;
+    line-height: $line-h-s;
+}
+
+.content{
+    padding: 0 10vw;
+}
+
