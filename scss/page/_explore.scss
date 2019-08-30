@@ -1,0 +1,15 @@
+// EXPLORE SETTING
+.layerBlack{
+    width: 100vw;
+    height: 50vh;
+    background-image: linear-gradient(to bottom, $color-nine ,$color-sec 70%);
+    position: absolute;
+    bottom:0;
+    z-index: 1;
+}
+
+.explore{
+    .title{
+        top: -50vh;
+    }
+}

@@ -1,4 +1,12 @@
 // HOME SETTING
+.home{
+    opacity: 1;
+    transition: all 3s;
+}
+
+.hide{
+    opacity: 0;
+}
 
 .background{
     width: 100vw;
@@ -17,28 +25,80 @@
     top:0;
 }
 .title{
-    bottom: 0;
+    bottom: -20vh;
 }
 .land{
-    bottom: 0;
+    bottom: -20vh;
 }
 .astronaut{
     bottom: 0;
 }
 .note{
     position: absolute;
-    top: 3vh;
+    top: 5vh;
     width: 100vw;
     text-align: center;
 
     color: $color-five;
     p{
         letter-spacing: $letter-spc-title1;
+        margin-bottom: 30px;
     }
     h3{
         letter-spacing: $letter-spc-title2;
         font-size: $fontsize-xxl;
         font-weight: $font-weight-s;
-        line-height: 2.5;
+        margin-bottom: 50px;
     }
+}
+
+.homeContent{
+    width: 80vw;
+    height: 90vh;
+    padding: 5vh 10vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.textName{
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    input{
+        background: none;
+        color: $color-six;
+        border: none;
+        text-align: center;
+        &::placeholder{
+            color: $color-six;
+        }
+        &:focus{
+            outline:none
+        }
+    }
+    .submit{
+        border: 1px solid $color-five;
+        width: 150px;
+        height: 45px;
+        @include pointer;
+        transition: all .3s;
+        &:hover{
+            background-color: $color-five-2;
+        }
+    }
+}
+
+.line{
+    background-color: $color-five;
+    width: 200px;
+    height: 1px;
+    margin: 20px 0;
+    opacity: 0.5;
 }

@@ -11,27 +11,48 @@
 </head>
 <body>
     <div id="wrap">
-        <div class="home">
+        <div class="home" ref='home' v-if='vNowPage.home'>
            <main>
                 <div class="background">
                     <img src="./img/homePage/space1.png" class="sky" alt="sky">
                     <img src="./img/homePage/Title.png" class="title move2" alt="title">
-                    <img src="./img/homePage/space2.png" class="land" alt="land">
+                    <img src="./img/homePage/space2.png" class="land move3" alt="land">
                     <img src="./img/homePage/man.png" class="astronaut move1" alt="astronaut">
                     <div class="note opacity">
                         <p>You Send a Message Out </p>
-                        <h3>To The<br>Universe</h3>
+                        <h3>To The</h3>
+                        <h3>Universe</h3>
                     </div>
                 </div>
-               <div class="content">
-
+               <div class="content homeContent">
+                   <div class="textName">
+                        <input @keyup='showSubmit' ref='textInput' type="text" placeholder="Enter a username">
+                        <div class="line"></div>
+                        <input v-if='bSubmit' @click='exploreStage' type="submit" class='submit' value="Explore">
+                   </div>
                </div>
            </main>
         </div>
 
-        <div class="chatRoom"></div>
+        <div class="explore" v-if='vNowPage.explore'>
+            <main>
+                <div class="background">
+                    <img src="./img/homePage/space0_hx2.png" alt="">
+                    <div class="layerBlack"></div>
+                    <img src="./img/homePage/Title.png" class="title move4" alt="title">
+                </div>
+                <div class="content">
+ 
+                </div>
+            </main>
+
+        </div>
+
+        <div class="chatRoom">
+
+        </div>
     </div>
 
-   <script src="vue/all.js"></script>    
+   <script src="js/all.js"></script>    
 </body>
 </html>

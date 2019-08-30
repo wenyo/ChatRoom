@@ -31,12 +31,12 @@
 
 @keyframes move2{
     from{
-        bottom: -2vh;
+        bottom: -25vh;
         left: 1vw;
         width: 98vw;
     }
     to{
-        bottom: -8vh;
+        bottom: -20vh;
         left: 0;
         width: 100vw;
     }
@@ -64,4 +64,36 @@
     animation-duration: 8s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
+}
+
+@keyframes move3{
+    from{
+        bottom: -20vh;
+    }
+    to{
+        bottom: -22vh;
+    }
+}
+
+.move3{
+    animation-name: move3;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.move4{
+    animation-name: move4;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes move4{
+    from{
+        top: -50vh;
+    }
+    to{
+        top: -47vh;
+    }
 }

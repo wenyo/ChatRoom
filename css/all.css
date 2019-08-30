@@ -71,6 +71,16 @@ img {
   padding: 0 10vw;
 }
 
+.home {
+  opacity: 1;
+  -webkit-transition: all 3s;
+  transition: all 3s;
+}
+
+.hide {
+  opacity: 0;
+}
+
 .background {
   width: 100vw;
   height: 100vh;
@@ -90,11 +100,11 @@ img {
 }
 
 .title {
-  bottom: 0;
+  bottom: -20vh;
 }
 
 .land {
-  bottom: 0;
+  bottom: -20vh;
 }
 
 .astronaut {
@@ -103,7 +113,7 @@ img {
 
 .note {
   position: absolute;
-  top: 3vh;
+  top: 5vh;
   width: 100vw;
   text-align: center;
   color: #f9bfcb;
@@ -111,13 +121,110 @@ img {
 
 .note p {
   letter-spacing: 24px;
+  margin-bottom: 30px;
 }
 
 .note h3 {
   letter-spacing: 76px;
   font-size: 38px;
   font-weight: 200;
-  line-height: 2.5;
+  margin-bottom: 50px;
+}
+
+.homeContent {
+  width: 80vw;
+  height: 90vh;
+  padding: 5vh 10vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.textName {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.textName input {
+  background: none;
+  color: #efefef;
+  border: none;
+  text-align: center;
+}
+
+.textName input::-webkit-input-placeholder {
+  color: #efefef;
+}
+
+.textName input:-ms-input-placeholder {
+  color: #efefef;
+}
+
+.textName input::-ms-input-placeholder {
+  color: #efefef;
+}
+
+.textName input::placeholder {
+  color: #efefef;
+}
+
+.textName input:focus {
+  outline: none;
+}
+
+.textName .submit {
+  border: 1px solid #f9bfcb;
+  width: 150px;
+  height: 45px;
+  cursor: pointer;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.textName .submit:hover {
+  background-color: rgba(249, 191, 203, 0.8);
+}
+
+.line {
+  background-color: #f9bfcb;
+  width: 200px;
+  height: 1px;
+  margin: 20px 0;
+  opacity: 0.5;
+}
+
+.layerBlack {
+  width: 100vw;
+  height: 50vh;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(38, 12, 51, 0)), color-stop(70%, #270a2e));
+  background-image: linear-gradient(to bottom, rgba(38, 12, 51, 0), #270a2e 70%);
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+}
+
+.explore .title {
+  top: -50vh;
 }
 
 @-webkit-keyframes move1 {
@@ -177,12 +284,12 @@ img {
 
 @-webkit-keyframes move2 {
   from {
-    bottom: -2vh;
+    bottom: -25vh;
     left: 1vw;
     width: 98vw;
   }
   to {
-    bottom: -8vh;
+    bottom: -20vh;
     left: 0;
     width: 100vw;
   }
@@ -190,12 +297,12 @@ img {
 
 @keyframes move2 {
   from {
-    bottom: -2vh;
+    bottom: -25vh;
     left: 1vw;
     width: 98vw;
   }
   to {
-    bottom: -8vh;
+    bottom: -20vh;
     left: 0;
     width: 100vw;
   }
@@ -240,5 +347,63 @@ img {
           animation-iteration-count: infinite;
   -webkit-animation-direction: alternate;
           animation-direction: alternate;
+}
+
+@-webkit-keyframes move3 {
+  from {
+    bottom: -20vh;
+  }
+  to {
+    bottom: -22vh;
+  }
+}
+
+@keyframes move3 {
+  from {
+    bottom: -20vh;
+  }
+  to {
+    bottom: -22vh;
+  }
+}
+
+.move3 {
+  -webkit-animation-name: move3;
+          animation-name: move3;
+  -webkit-animation-duration: 8s;
+          animation-duration: 8s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+.move4 {
+  -webkit-animation-name: move4;
+          animation-name: move4;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+@-webkit-keyframes move4 {
+  from {
+    top: -50vh;
+  }
+  to {
+    top: -47vh;
+  }
+}
+
+@keyframes move4 {
+  from {
+    top: -50vh;
+  }
+  to {
+    top: -47vh;
+  }
 }
 /*# sourceMappingURL=all.css.map */
