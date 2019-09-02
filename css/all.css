@@ -71,10 +71,20 @@ img {
   padding: 0 10vw;
 }
 
-.home {
+.home, .explore {
   opacity: 1;
   -webkit-transition: all 3s;
   transition: all 3s;
+  position: absolute;
+  top: 0;
+}
+
+.home {
+  z-index: 3;
+}
+
+.explore {
+  z-index: 2;
 }
 
 .hide {

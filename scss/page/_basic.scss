@@ -11,3 +11,19 @@
     padding: 0 10vw;
 }
 
+.home, .explore{
+    opacity: 1;
+    transition: all 3s;
+    position: absolute;
+    top: 0;
+}
+.home{
+    z-index: 3;
+}
+.explore{
+    z-index: 2;
+}
+.hide{
+    opacity: 0;
+}
+

@@ -3,8 +3,8 @@ const wrap = new Vue({
     data: {
         bSubmit: false,
         vNowPage: {
-            'home' : false,
-            'explore' : true,
+            'home' : true,
+            'explore' : false,
             'chatRoom' : false,
         }
     },
@@ -18,6 +18,7 @@ const wrap = new Vue({
             }
         },
         exploreStage(){
+            this.vNowPage.explore = true;
             this.$refs.home.classList += ' hide';
             window.setTimeout(()=>{
                 this.vNowPage.home = false;
